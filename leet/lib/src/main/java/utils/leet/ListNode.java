@@ -2,8 +2,8 @@ package utils.leet;
 
 public class ListNode {
 
-	public int val; 
-	public ListNode next; 
+	private int val; 
+	private ListNode next; 
 	
 	public ListNode(int val) {
 		this.val = val;
@@ -12,5 +12,13 @@ public class ListNode {
 	public ListNode(int val, ListNode next) {
 		this.val = val; 
 		this.next = next; 
+	}
+
+	public ListNode getNext(){
+		return this.next;
+	}
+
+	public int getVal(){
+		return this.val;
 	}
 }
